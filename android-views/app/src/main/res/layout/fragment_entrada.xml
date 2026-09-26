@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/espacio_m">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_m"
+            android:text="@string/s1_intro"
+            android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+        <!-- 1. Campo simple -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="TextInputLayout + TextInputEditText"
+            app:descripcion="@string/s1_simple_d"
+            app:titulo="@string/s1_simple_t">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/s1_simple_hint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName|textCapWords" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvSaludo"
+                style="@style/Resultado"
+                android:text="@string/s1_simple_vacio" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 2. Validación -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="TextInputLayout (error, helperText, counter)"
+            app:descripcion="@string/s1_valid_d"
+            app:titulo="@string/s1_valid_t">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/s1_valid_hint"
+                app:counterEnabled="true"
+                app:counterMaxLength="5"
+                app:helperText="@string/s1_valid_ayuda">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="5" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 3. Contraseña -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="TextInputLayout (endIconMode = password_toggle)"
+            app:descripcion="@string/s1_pass_d"
+            app:titulo="@string/s1_pass_t">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/s1_pass_hint"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvFuerza"
+                style="@style/Resultado"
+                android:text="@string/s1_pass_vacia" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 4. Tipos de teclado -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="EditText android:inputType"
+            app:descripcion="@string/s1_teclado_d"
+            app:titulo="@string/s1_teclado_t">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/s1_numero_hint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="3" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espacio_s"
+                android:hint="@string/s1_correo_hint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espacio_s"
+                android:hint="@string/s1_tel_hint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 5. Multilínea -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="TextInputEditText (textMultiLine)"
+            app:descripcion="@string/s1_multi_d"
+            app:titulo="@string/s1_multi_t">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/s1_multi_hint"
+                app:counterEnabled="true"
+                app:counterMaxLength="200">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNotas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:maxLength="200"
+                    android:maxLines="6"
+                    android:minLines="3" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvLineas"
+                style="@style/Resultado" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 6. Autocompletar -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="MaterialAutoCompleteTextView + ArrayAdapter"
+            app:descripcion="@string/s1_auto_d"
+            app:titulo="@string/s1_auto_t">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/s1_auto_hint">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/actvEstado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvEstado"
+                style="@style/Resultado"
+                android:text="@string/s1_auto_vacio" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 7. Búsqueda -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="SearchView (androidx.appcompat)"
+            app:descripcion="@string/s1_buscar_d"
+            app:titulo="@string/s1_buscar_t">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/buscador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_contorno"
+                app:iconifiedByDefault="false"
+                app:queryHint="@string/s1_buscar_hint" />
+
+            <TextView
+                android:id="@+id/tvResultados"
+                style="@style/Resultado" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 8. Conexión con la Sección 4 -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="TextInputLayout + MaterialButton + ViewModel compartido"
+            app:descripcion="@string/s1_agregar_d"
+            app:titulo="@string/s1_agregar_t">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNuevo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/s1_agregar_hint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNuevo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAgregar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espacio_s"
+                android:text="@string/s1_agregar_btn"
+                app:icon="@drawable/ic_add" />
+
+            <TextView
+                android:id="@+id/tvTotal"
+                style="@style/Resultado" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
