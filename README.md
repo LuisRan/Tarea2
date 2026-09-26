@@ -26,9 +26,12 @@ Cada versión tiene una **pantalla principal** y **seis secciones**. En cada sec
 
 | Campo | Dato |
 |-------|------|
-| Nombre completo | _[Escribe aquí tu nombre completo]_ |
-| Número de boleta | _[Escribe aquí tu boleta]_ |
-| Grupo | _[Escribe aquí tu grupo]_ |
+| Nombre completo | Rangel Mata José Luis |
+| Número de boleta | 2023630577 |
+| Grupo | 7CV4 |
+| Asignatura | Desarrollo de aplicaciones móviles nativas |
+| Profesor | Gabriel Hurtado Avilés |
+| Fecha de entrega | 18 de septiembre de 2026 |
 
 ## Tecnologías utilizadas
 
