@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/espacio_m">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_m"
+            android:text="@string/s6_intro"
+            android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+        <!-- 1. Fila y columna -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="LinearLayout (orientation horizontal / vertical)"
+            app:descripcion="@string/s6_filacol_d"
+            app:titulo="@string/s6_filacol_t">
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/tgOrientacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:checkedButton="@id/btnFila"
+                app:selectionRequired="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFila"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fila" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnColumna"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/columna" />
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <LinearLayout
+                android:id="@+id/llDistribucion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espacio_s"
+                android:animateLayoutChanges="true"
+                android:orientation="horizontal">
+
+                <TextView style="@style/Caja" android:text="A" />
+                <TextView style="@style/Caja" android:text="B" />
+                <TextView style="@style/Caja" android:text="C" />
+            </LinearLayout>
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 2. Superpuesta -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="FrameLayout"
+            app:descripcion="@string/s6_capas_d"
+            app:titulo="@string/s6_capas_t">
+
+            <FrameLayout
+                android:id="@+id/flCapas"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/s5_img_desc_local"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/paisaje" />
+
+                <TextView
+                    android:id="@+id/tvCapa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/espacio_s"
+                    android:background="@drawable/bg_capa"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="6dp"
+                    android:text="@string/s6_capa"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvCapaInfo"
+                style="@style/Resultado" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 3. Desplazamiento -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="NestedScrollView / ScrollView"
+            app:descripcion="@string/s6_scroll_d"
+            app:titulo="@string/s6_scroll_t">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/svInterno"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/bg_contorno"
+                android:padding="@dimen/espacio_s">
+
+                <LinearLayout
+                    android:id="@+id/llRenglones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </androidx.core.widget.NestedScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espacio_s"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnIrFinal"
+                    style="@style/Widget.Material3.Button.TonalButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s6_ir_final" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnIrInicio"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/espacio_s"
+                    android:text="@string/s6_ir_inicio" />
+            </LinearLayout>
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 4. Barra superior -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="MaterialToolbar + menú"
+            app:descripcion="@string/s6_toolbar_d"
+            app:titulo="@string/s6_toolbar_t">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/tbDemo"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/bg_redondeado"
+                android:backgroundTint="?attr/colorPrimaryContainer"
+                app:menu="@menu/menu_demo_toolbar"
+                app:navigationContentDescription="@string/menu"
+                app:navigationIcon="@drawable/ic_menu"
+                app:title="@string/s6_toolbar_titulo" />
+
+            <TextView
+                android:id="@+id/tvToolbar"
+                style="@style/Resultado" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 5. Navegación inferior -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="BottomNavigationView (y NavigationView en la app)"
+            app:descripcion="@string/s6_nav_d"
+            app:titulo="@string/s6_nav_t">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_contorno"
+                android:orientation="vertical"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/tvNavContenido"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:gravity="center"
+                    android:textAppearance="?attr/textAppearanceTitleLarge" />
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bnDemo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:menu="@menu/menu_demo_inferior"
+                    app:paddingBottomSystemWindowInsets="false" />
+            </LinearLayout>
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 6. Pesos y restricciones -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="LinearLayout (layout_weight) / ConstraintLayout"
+            app:descripcion="@string/s6_pesos_d"
+            app:titulo="@string/s6_pesos_t">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/vPeso1"
+                    style="@style/Caja"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="A" />
+
+                <TextView
+                    style="@style/Caja"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:backgroundTint="?attr/colorSecondaryContainer"
+                    android:text="B" />
+
+                <TextView
+                    style="@style/Caja"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="?attr/colorTertiaryContainer"
+                    android:text="C" />
+            </LinearLayout>
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderPeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/s6_pesos_t"
+                android:stepSize="1"
+                android:value="1"
+                android:valueFrom="1"
+                android:valueTo="5" />
+
+            <TextView
+                android:id="@+id/tvPesos"
+                style="@style/Resultado"
+                android:layout_marginTop="0dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/espacio_m"
+                android:background="@drawable/bg_contorno">
+
+                <TextView
+                    android:id="@+id/cAncla"
+                    style="@style/Caja"
+                    android:layout_margin="@dimen/espacio_s"
+                    android:text="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/cBias"
+                    style="@style/Caja"
+                    android:backgroundTint="?attr/colorTertiaryContainer"
+                    android:text="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@id/cAncla"
+                    app:layout_constraintTop_toBottomOf="@id/cAncla" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderBias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/s6_pesos_t"
+                android:value="50"
+                android:valueFrom="0"
+                android:valueTo="100" />
+
+            <TextView
+                android:id="@+id/tvBias"
+                style="@style/Resultado"
+                android:layout_marginTop="0dp" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
