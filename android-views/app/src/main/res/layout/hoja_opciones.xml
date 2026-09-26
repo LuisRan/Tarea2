@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/espacio_l">
+
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/espacio_l"
+        android:paddingBottom="@dimen/espacio_s"
+        android:text="@string/s5_hoja_titulo"
+        android:textAppearance="?attr/textAppearanceTitleLarge" />
+
+    <TextView
+        android:id="@+id/opcCompartir"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/selectableItemBackground"
+        android:drawablePadding="@dimen/espacio_m"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/espacio_l"
+        android:text="@string/s2_compartir"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        app:drawableStartCompat="@drawable/ic_share" />
+
+    <TextView
+        android:id="@+id/opcEditar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/selectableItemBackground"
+        android:drawablePadding="@dimen/espacio_m"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/espacio_l"
+        android:text="@string/editar"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        app:drawableStartCompat="@drawable/ic_edit" />
+
+    <TextView
+        android:id="@+id/opcEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/selectableItemBackground"
+        android:drawablePadding="@dimen/espacio_m"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/espacio_l"
+        android:text="@string/eliminar"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        app:drawableStartCompat="@drawable/ic_delete" />
+</LinearLayout>
