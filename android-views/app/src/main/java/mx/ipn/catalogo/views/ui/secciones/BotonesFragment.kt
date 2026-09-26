@@ -22,6 +22,7 @@ class BotonesFragment : SeccionFragment(R.layout.fragment_botones, Seccion.BOTON
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val b = FragmentBotonesBinding.bind(view)
+        extendido = true
 
         // 1. Botones básicos: cada uno reporta su nombre y el total de pulsaciones.
         listOf(b.btnRelleno, b.btnContorno, b.btnTexto).forEach { boton ->

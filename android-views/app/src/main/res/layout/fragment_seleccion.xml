@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/espacio_m">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_m"
+            android:text="@string/s3_intro"
+            android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+        <!-- 1. Casillas con estado indeterminado -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="MaterialCheckBox (STATE_INDETERMINATE)"
+            app:descripcion="@string/s3_check_d"
+            app:titulo="@string/s3_check_t">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbTodos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/s3_todos" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbQueso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/queso" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbJamon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:checked="true"
+                android:text="@string/jamon" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cbPina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/pina" />
+
+            <TextView
+                android:id="@+id/tvCasillas"
+                style="@style/Resultado" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 2. Radio -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="RadioGroup + MaterialRadioButton"
+            app:descripcion="@string/s3_radio_d"
+            app:titulo="@string/s3_radio_t">
+
+            <RadioGroup
+                android:id="@+id/rgEnvio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@id/rbEstandar">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/rbEstandar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/envio_estandar" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/rbExpress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/envio_express" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/rbRecoger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/envio_recoger" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvEnvio"
+                style="@style/Resultado" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 3. Switch -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="MaterialSwitch"
+            app:descripcion="@string/s3_switch_d"
+            app:titulo="@string/s3_switch_t">
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/swNotificaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/s3_switch_lbl" />
+
+            <TextView
+                android:id="@+id/tvSwitch"
+                style="@style/Resultado"
+                android:text="@string/s3_switch_off" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 4. Deslizadores -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="Slider / RangeSlider"
+            app:descripcion="@string/s3_slider_d"
+            app:titulo="@string/s3_slider_t">
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderTexto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/s3_slider_t"
+                android:stepSize="2"
+                android:value="18"
+                android:valueFrom="12"
+                android:valueTo="32" />
+
+            <TextView
+                android:id="@+id/tvSlider"
+                style="@style/Resultado" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:id="@+id/rangoPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espacio_s"
+                android:contentDescription="@string/s3_slider_t"
+                android:stepSize="50"
+                android:valueFrom="0"
+                android:valueTo="1000" />
+
+            <TextView
+                android:id="@+id/tvRango"
+                style="@style/Resultado" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 5. Desplegable -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="TextInputLayout (ExposedDropdownMenu)"
+            app:descripcion="@string/s3_dropdown_d"
+            app:titulo="@string/s3_dropdown_t">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/s3_pais">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/actvPais"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    app:simpleItems="@array/paises" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvPais"
+                style="@style/Resultado" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 6. Fecha y hora -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="MaterialDatePicker / MaterialTimePicker"
+            app:descripcion="@string/s3_fecha_d"
+            app:titulo="@string/s3_fecha_t">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFecha"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s3_elegir_fecha"
+                    app:icon="@drawable/ic_calendar" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnHora"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/espacio_s"
+                    android:text="@string/s3_elegir_hora"
+                    app:icon="@drawable/ic_schedule" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvFecha"
+                style="@style/Resultado"
+                android:text="@string/s3_sin_fecha" />
+
+            <TextView
+                android:id="@+id/tvHora"
+                style="@style/Resultado"
+                android:layout_marginTop="0dp"
+                android:text="@string/s3_sin_hora" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 7. Chips -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="ChipGroup + Chip (Filter)"
+            app:descripcion="@string/s3_chips_d"
+            app:titulo="@string/s3_chips_t">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/cgFiltros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vegano" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sin_gluten" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/organico" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/local" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temporada" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/tvChips"
+                style="@style/Resultado" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
