@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/espacio_m">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espacio_m"
+            android:text="@string/s2_intro"
+            android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+        <!-- 1. Relleno, contorno y texto -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="MaterialButton (Filled / OutlinedButton / TextButton)"
+            app:descripcion="@string/s2_basicos_d"
+            app:titulo="@string/s2_basicos_t">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRelleno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/relleno" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnContorno"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/espacio_s"
+                    android:text="@string/contorno" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnTexto"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/espacio_s"
+                    android:text="@string/texto" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvBasicos"
+                style="@style/Resultado"
+                android:text="@string/s2_toca" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 2. Íconos -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="MaterialButton (IconButton) / MaterialButton + app:icon"
+            app:descripcion="@string/s2_icono_d"
+            app:titulo="@string/s2_icono_t">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFavorito"
+                    style="?attr/materialIconButtonFilledStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/s2_favorito"
+                    app:icon="@drawable/ic_favorite_border" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCompartir"
+                    style="?attr/materialIconButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/espacio_s"
+                    android:contentDescription="@string/s2_compartir"
+                    app:icon="@drawable/ic_share" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEnviar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/espacio_s"
+                    android:text="@string/s2_enviar"
+                    app:icon="@drawable/ic_send" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvIconos"
+                style="@style/Resultado"
+                android:text="@string/s2_toca" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 3. FAB -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="FloatingActionButton / ExtendedFloatingActionButton"
+            app:descripcion="@string/s2_fab_d"
+            app:titulo="@string/s2_fab_t">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/s2_fab_t"
+                    app:srcCompat="@drawable/ic_add" />
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/efab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/espacio_m"
+                    android:text="@string/s2_fab_extendido"
+                    app:icon="@drawable/ic_edit" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvFab"
+                style="@style/Resultado" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 4. Segmentado -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="MaterialButtonToggleGroup"
+            app:descripcion="@string/s2_toggle_d"
+            app:titulo="@string/s2_toggle_t">
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/grupoVista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:checkedButton="@id/btnDia"
+                app:selectionRequired="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDia"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dia" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSemana"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/semana" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMes"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mes" />
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <TextView
+                android:id="@+id/tvVista"
+                style="@style/Resultado" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+
+        <!-- 5. Deshabilitado y cargando -->
+        <mx.ipn.catalogo.views.ui.DemoCard
+            style="@style/Demo"
+            app:componente="MaterialButton (enabled=false) + CircularProgressIndicator"
+            app:descripcion="@string/s2_estados_d"
+            app:titulo="@string/s2_estados_t">
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/swHabilitar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/s2_habilitar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeshabilitado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/s2_deshabilitado" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espacio_s">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCargar"
+                    style="@style/Widget.Material3.Button.TonalButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="180dp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/s2_cargar" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/pbCargar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    app:indicatorSize="22dp"
+                    app:trackThickness="3dp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvEstados"
+                style="@style/Resultado" />
+        </mx.ipn.catalogo.views.ui.DemoCard>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
