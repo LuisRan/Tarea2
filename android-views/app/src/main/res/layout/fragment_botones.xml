@@ -148,7 +148,7 @@
                 android:id="@+id/grupoVista"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:checkedButton="@id/btnDia"
+                app:checkedButton="@+id/btnDia"
                 app:selectionRequired="true"
                 app:singleSelection="true">
 

@@ -115,7 +115,7 @@
                 android:id="@+id/cgEscala"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:checkedChip="@id/chipCrop"
+                app:checkedChip="@+id/chipCrop"
                 app:selectionRequired="true"
                 app:singleSelection="true">
 

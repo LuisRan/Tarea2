@@ -28,7 +28,7 @@
                 android:id="@+id/tgOrientacion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:checkedButton="@id/btnFila"
+                app:checkedButton="@+id/btnFila"
                 app:selectionRequired="true"
                 app:singleSelection="true">
 

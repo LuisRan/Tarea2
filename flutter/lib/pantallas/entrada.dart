@@ -301,7 +301,7 @@ class _BarraBusquedaState extends State<_BarraBusqueda> {
           controller: _controlador,
           hintText: 'Buscar frutas o verduras…',
           leading: const Icon(Icons.search),
-          elevation: const WidgetStatePropertyAll(1),
+          elevation: const WidgetStatePropertyAll(1.0),
           onChanged: (_) => setState(() {}),
           trailing: [
             if (consulta.isNotEmpty)
