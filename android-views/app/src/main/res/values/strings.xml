@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Catálogo UI · Views</string>
+    <string name="abrir_menu">Abrir menú</string>
+    <string name="regresar">Regresar</string>
+    <string name="ir_inicio">Ir a la pantalla principal</string>
+
+    <!-- Pantalla principal -->
+    <string name="inicio_titulo">Catálogo de elementos de interfaz</string>
+    <string name="inicio_intro">Explora los componentes básicos de una interfaz móvil construidos con Android Views y layouts XML. Cada sección muestra el nombre de cada elemento, para qué sirve y una demostración con la que puedes interactuar.</string>
+    <string name="inicio_nota">Conexión entre secciones: lo que agregues en la Sección 1 aparece en la lista de la Sección 4, y el tamaño de texto elegido en la Sección 3 cambia el texto de muestra de la Sección 5. El tema claro u oscuro sigue la configuración del sistema.</string>
+    <string name="inicio_desc">Pantalla principal</string>
+
+    <!-- Nombres de las secciones -->
+    <string name="sec1">1. Entrada de texto</string>
+    <string name="sec2">2. Botones y acciones</string>
+    <string name="sec3">3. Elementos de selección</string>
+    <string name="sec4">4. Listas y colecciones</string>
+    <string name="sec5">5. Información y retroalimentación</string>
+    <string name="sec6">6. Contenedores y estructura</string>
+    <string name="inicio">Inicio</string>
+
+    <string name="sec1_desc">Campos de texto, validación, contraseñas, teclados, sugerencias y búsqueda.</string>
+    <string name="sec2_desc">Botones rellenos, con contorno, con ícono, flotantes, segmentados y sus estados.</string>
+    <string name="sec3_desc">Casillas, opciones, interruptores, deslizadores, listas desplegables, fecha, hora y chips.</string>
+    <string name="sec4_desc">Listas, cuadrículas, encabezados, deslizar para eliminar, actualizar y pestañas.</string>
+    <string name="sec5_desc">Estilos de texto, imágenes, progreso, mensajes, diálogos, hojas inferiores y badges.</string>
+    <string name="sec6_desc">Filas, columnas, capas, desplazamiento, barras de navegación y pesos.</string>
+
+    <!-- ========== SECCIÓN 1 ========== -->
+    <string name="s1_intro">Los campos de texto permiten al usuario capturar información. Prueba cada uno y observa la respuesta debajo.</string>
+    <string name="s1_simple_t">Campo de texto simple</string>
+    <string name="s1_simple_d">Captura texto libre de una sola línea. La etiqueta flotante indica qué dato se espera y sube cuando el campo recibe el foco.</string>
+    <string name="s1_simple_hint">Tu nombre</string>
+    <string name="s1_simple_vacio">Escribe tu nombre para saludarte.</string>
+    <string name="s1_simple_resp">¡Hola, %1$s!</string>
+
+    <string name="s1_valid_t">Campo con validación</string>
+    <string name="s1_valid_d">Comprueba el dato mientras se escribe y muestra un mensaje de error visible cuando no cumple la regla. Aquí se exige un código postal de 5 dígitos.</string>
+    <string name="s1_valid_hint">Código postal</string>
+    <string name="s1_valid_ayuda">Debe tener 5 dígitos</string>
+    <string name="s1_valid_error">El código postal debe tener exactamente 5 dígitos</string>
+    <string name="s1_valid_ok">Código postal válido ✔</string>
+
+    <string name="s1_pass_t">Campo de contraseña</string>
+    <string name="s1_pass_d">Oculta los caracteres para proteger datos sensibles. El ícono del ojo permite mostrar u ocultar el contenido.</string>
+    <string name="s1_pass_hint">Contraseña</string>
+    <string name="s1_pass_vacia">Seguridad: escribe una contraseña</string>
+    <string name="s1_pass_debil">Seguridad: débil</string>
+    <string name="s1_pass_media">Seguridad: media</string>
+    <string name="s1_pass_fuerte">Seguridad: fuerte</string>
+
+    <string name="s1_teclado_t">Tipos de teclado</string>
+    <string name="s1_teclado_d">El atributo inputType indica qué teclado mostrar: numérico, de correo (con @) o telefónico. Así se facilita la captura y se reducen errores.</string>
+    <string name="s1_numero_hint">Edad (teclado numérico)</string>
+    <string name="s1_correo_hint">Correo electrónico</string>
+    <string name="s1_correo_error">Formato de correo no válido</string>
+    <string name="s1_tel_hint">Teléfono</string>
+
+    <string name="s1_multi_t">Campo multilínea</string>
+    <string name="s1_multi_d">Admite varias líneas para textos largos como comentarios o notas. Crece conforme se escribe y muestra un contador de caracteres.</string>
+    <string name="s1_multi_hint">Comentarios</string>
+    <string name="s1_multi_resp">Líneas: %1$d · Palabras: %2$d</string>
+
+    <string name="s1_auto_t">Campo con sugerencias automáticas</string>
+    <string name="s1_auto_d">Propone opciones mientras el usuario escribe, reduciendo errores de captura. Escribe las primeras letras de un estado de la República.</string>
+    <string name="s1_auto_hint">Estado de la República</string>
+    <string name="s1_auto_resp">Seleccionaste: %1$s</string>
+    <string name="s1_auto_vacio">Aún no eliges un estado.</string>
+
+    <string name="s1_buscar_t">Barra de búsqueda</string>
+    <string name="s1_buscar_d">Campo especializado para filtrar contenido. Aquí busca dentro de los elementos de la lista de la Sección 4.</string>
+    <string name="s1_buscar_hint">Buscar frutas o verduras…</string>
+    <string name="s1_buscar_sin">Sin resultados para «%1$s»</string>
+    <string name="s1_buscar_res">%1$d resultado(s): %2$s</string>
+
+    <string name="s1_agregar_t">Conexión con la Sección 4</string>
+    <string name="s1_agregar_d">El texto capturado aquí se agrega a la lista compartida que se muestra en la Sección 4 (Listas y colecciones).</string>
+    <string name="s1_agregar_hint">Nuevo elemento</string>
+    <string name="s1_agregar_btn">Agregar a la lista</string>
+    <string name="s1_agregar_error">Escribe un nombre antes de agregar</string>
+    <string name="s1_agregar_ok">«%1$s» se agregó a la Sección 4</string>
+    <string name="s1_total">La lista compartida tiene %1$d elementos</string>
+
+    <!-- ========== SECCIÓN 2 ========== -->
+    <string name="s2_intro">Los botones ejecutan acciones. Cada uno responde al pulsarlo mostrando un mensaje.</string>
+    <string name="s2_basicos_t">Botón relleno, con contorno y de texto</string>
+    <string name="s2_basicos_d">Representan distintos niveles de énfasis: el relleno es la acción principal, el de contorno una secundaria y el de texto una acción de baja prioridad.</string>
+    <string name="relleno">Relleno</string>
+    <string name="contorno">Contorno</string>
+    <string name="texto">Texto</string>
+    <string name="s2_pulsaste">Pulsaste «%1$s» (%2$d veces en total)</string>
+    <string name="s2_toca">Toca un botón.</string>
+
+    <string name="s2_icono_t">Botones con ícono</string>
+    <string name="s2_icono_d">Un botón de solo ícono ahorra espacio en acciones reconocibles; el de ícono más texto refuerza el significado de la acción.</string>
+    <string name="s2_favorito">Marcar como favorito</string>
+    <string name="s2_compartir">Compartir</string>
+    <string name="s2_enviar">Enviar</string>
+    <string name="s2_fav_si">Agregado a favoritos ♥</string>
+    <string name="s2_fav_no">Quitado de favoritos</string>
+    <string name="s2_compartido">Acción: compartir</string>
+    <string name="s2_enviado">Mensaje enviado ✉</string>
+
+    <string name="s2_fab_t">Botón de acción flotante (FAB)</string>
+    <string name="s2_fab_d">Destaca la acción más importante de una pantalla. La versión extendida agrega una etiqueta y puede contraerse para ahorrar espacio.</string>
+    <string name="s2_fab_extendido">Redactar</string>
+    <string name="s2_fab_resp">FAB: %1$d · Extendido: %2$s</string>
+    <string name="extendido">extendido</string>
+    <string name="contraido">contraído</string>
+
+    <string name="s2_toggle_t">Selector segmentado (toggle)</string>
+    <string name="s2_toggle_d">Agrupa opciones relacionadas en las que solo una puede estar activa, como cambiar entre vistas de día, semana o mes.</string>
+    <string name="dia">Día</string>
+    <string name="semana">Semana</string>
+    <string name="mes">Mes</string>
+    <string name="s2_vista">Vista actual: %1$s</string>
+
+    <string name="s2_estados_t">Botón deshabilitado y en estado de carga</string>
+    <string name="s2_estados_d">Un botón deshabilitado indica que la acción no está disponible todavía. El estado de carga informa que la acción está en proceso y evita pulsaciones repetidas.</string>
+    <string name="s2_habilitar">Habilitar el botón</string>
+    <string name="s2_deshabilitado">Confirmar pedido</string>
+    <string name="s2_confirmado">¡Pedido confirmado!</string>
+    <string name="s2_cargar">Descargar archivo</string>
+    <string name="s2_cargando">Descargando…</string>
+    <string name="s2_cargado">Descarga completa ✔</string>
+
+    <!-- ========== SECCIÓN 3 ========== -->
+    <string name="s3_intro">Los elementos de selección permiten elegir entre opciones sin escribir.</string>
+    <string name="s3_check_t">Casillas de verificación</string>
+    <string name="s3_check_d">Permiten marcar varias opciones independientes. La casilla principal muestra un estado indeterminado cuando solo algunas opciones están marcadas.</string>
+    <string name="s3_todos">Todos los ingredientes</string>
+    <string name="queso">Queso</string>
+    <string name="jamon">Jamón</string>
+    <string name="pina">Piña</string>
+    <string name="s3_check_resp">Seleccionados: %1$s</string>
+    <string name="ninguno">ninguno</string>
+
+    <string name="s3_radio_t">Botones de opción</string>
+    <string name="s3_radio_d">Grupo de opciones mutuamente excluyentes: al elegir una se desmarca la anterior. Útil cuando solo puede haber una respuesta.</string>
+    <string name="envio_estandar">Envío estándar</string>
+    <string name="envio_express">Envío exprés</string>
+    <string name="envio_recoger">Recoger en tienda</string>
+    <string name="s3_radio_resp">Opción elegida: %1$s</string>
+
+    <string name="s3_switch_t">Interruptor (switch)</string>
+    <string name="s3_switch_d">Activa o desactiva una opción de forma inmediata, como una preferencia de configuración.</string>
+    <string name="s3_switch_lbl">Recibir notificaciones</string>
+    <string name="s3_switch_on">Notificaciones activadas 🔔</string>
+    <string name="s3_switch_off">Notificaciones desactivadas</string>
+
+    <string name="s3_slider_t">Deslizador de valor único y de rango</string>
+    <string name="s3_slider_d">El deslizador elige un valor dentro de un intervalo; el de rango elige un mínimo y un máximo. El primero define el tamaño de texto que se usa en la Sección 5.</string>
+    <string name="s3_slider_resp">Tamaño de texto para la Sección 5: %1$d sp</string>
+    <string name="s3_rango_resp">Precio entre $%1$d y $%2$d</string>
+
+    <string name="s3_dropdown_t">Lista desplegable</string>
+    <string name="s3_dropdown_d">Muestra una lista de opciones al tocarla y conserva la elegida. Ocupa poco espacio cuando hay muchas opciones.</string>
+    <string name="s3_pais">País</string>
+    <string name="s3_pais_resp">País elegido: %1$s</string>
+
+    <string name="s3_fecha_t">Selector de fecha y de hora</string>
+    <string name="s3_fecha_d">Abren diálogos con un calendario o un reloj para elegir fechas y horas válidas sin escribirlas a mano.</string>
+    <string name="s3_elegir_fecha">Elegir fecha</string>
+    <string name="s3_elegir_hora">Elegir hora</string>
+    <string name="s3_fecha_titulo">Selecciona una fecha</string>
+    <string name="s3_hora_titulo">Selecciona una hora</string>
+    <string name="s3_fecha_resp">Fecha: %1$s</string>
+    <string name="s3_hora_resp">Hora: %1$s</string>
+    <string name="s3_sin_fecha">Fecha: sin elegir</string>
+    <string name="s3_sin_hora">Hora: sin elegir</string>
+
+    <string name="s3_chips_t">Chips de filtro</string>
+    <string name="s3_chips_d">Etiquetas compactas que se activan o desactivan para filtrar contenido. Se pueden combinar varias a la vez.</string>
+    <string name="vegano">Vegano</string>
+    <string name="sin_gluten">Sin gluten</string>
+    <string name="organico">Orgánico</string>
+    <string name="local">Local</string>
+    <string name="temporada">De temporada</string>
+    <string name="s3_chips_resp">Filtros activos: %1$s</string>
+
+    <!-- ========== SECCIÓN 4 ========== -->
+    <string name="s4_intro">Las listas muestran colecciones de datos. La lista de esta sección es compartida con la Sección 1.</string>
+    <string name="s4_lista_t">Lista vertical (con detalle, deslizar y actualizar)</string>
+    <string name="s4_lista_d">Muestra muchos elementos de forma eficiente reciclando las vistas. Toca un elemento para ver su detalle, deslízalo a un lado para eliminarlo o arrastra hacia abajo para actualizar la lista.</string>
+    <string name="s4_conteo">%1$d elementos</string>
+    <string name="s4_vaciar">Vaciar lista</string>
+    <string name="s4_restaurar">Restaurar lista</string>
+    <string name="s4_eliminado">Eliminaste «%1$s»</string>
+    <string name="deshacer">Deshacer</string>
+    <string name="s4_actualizada">Lista actualizada</string>
+    <string name="cerrar">Cerrar</string>
+    <string name="s4_detalle">Categoría: %1$s\n\n%2$s</string>
+
+    <string name="s4_vacio_t">Estado vacío</string>
+    <string name="s4_vacio_d">Cuando no hay elementos se muestra un mensaje con una ilustración en lugar de un espacio en blanco. Pulsa «Vaciar lista» arriba para verlo.</string>
+    <string name="s4_vacio_titulo">No hay elementos</string>
+    <string name="s4_vacio_msg">Agrega uno desde la Sección 1 o restaura la lista.</string>
+
+    <string name="s4_grid_t">Cuadrícula</string>
+    <string name="s4_grid_d">Organiza los elementos en filas y columnas; es ideal para contenido visual como colores, fotos o productos.</string>
+    <string name="s4_grid_resp">Elegiste el color: %1$s</string>
+    <string name="s4_grid_toca">Toca un color.</string>
+
+    <string name="s4_secciones_t">Lista con encabezados de sección</string>
+    <string name="s4_secciones_d">Combina dos tipos de elemento: encabezados que agrupan y filas de contenido. Aquí se agrupa la lista compartida por categoría.</string>
+    <string name="s4_encabezado">%1$s (%2$d)</string>
+
+    <string name="s4_tabs_t">Pestañas con contenido deslizable</string>
+    <string name="s4_tabs_d">Dividen contenido relacionado en páginas. Puedes tocar una pestaña o deslizar horizontalmente para cambiar de página.</string>
+    <string name="tab_resumen">Resumen</string>
+    <string name="tab_detalles">Detalles</string>
+    <string name="tab_ajustes">Ajustes</string>
+    <string name="tab_resumen_txt">Esta es la primera página. Desliza hacia la izquierda para ver la siguiente.</string>
+    <string name="tab_detalles_txt">Segunda página: las pestañas se sincronizan con el deslizamiento.</string>
+    <string name="tab_ajustes_txt">Tercera página: toca «Resumen» para volver al inicio.</string>
+
+    <!-- ========== SECCIÓN 5 ========== -->
+    <string name="s5_intro">Elementos que comunican información y dan retroalimentación al usuario.</string>
+    <string name="s5_textos_t">Textos con distintos estilos</string>
+    <string name="s5_textos_d">La tipografía crea jerarquía: títulos grandes, subtítulos, cuerpo y etiquetas, además de énfasis con negritas, cursivas y color.</string>
+    <string name="s5_display">Título grande</string>
+    <string name="s5_headline">Encabezado de sección</string>
+    <string name="s5_title">Subtítulo mediano</string>
+    <string name="s5_body">Texto de cuerpo para párrafos largos y descripciones.</string>
+    <string name="s5_label">ETIQUETA PEQUEÑA</string>
+    <string name="s5_negrita">Texto en negritas</string>
+    <string name="s5_cursiva">Texto en cursiva</string>
+    <string name="s5_color">Texto con el color principal</string>
+    <string name="s5_ajustable">Este texto usa el tamaño elegido en la Sección 3 (%1$d sp).</string>
+    <string name="s5_mayus">Mostrar en mayúsculas</string>
+
+    <string name="s5_img_t">Imagen local y desde URL</string>
+    <string name="s5_img_d">Muestra una imagen incluida en la app y otra descargada de internet. El modo de escalado define cómo se ajusta la imagen a su contenedor.</string>
+    <string name="s5_img_local">Local (drawable)</string>
+    <string name="s5_img_url">Desde URL</string>
+    <string name="s5_otra_img">Cargar otra imagen</string>
+    <string name="s5_img_desc_local">Paisaje de montañas incluido en la app</string>
+    <string name="s5_img_desc_url">Fotografía descargada de internet</string>
+
+    <string name="s5_prog_t">Indicadores de progreso</string>
+    <string name="s5_prog_d">El modo determinado muestra cuánto falta para terminar; el indeterminado indica que hay trabajo en curso de duración desconocida.</string>
+    <string name="s5_prog_resp">Progreso: %1$d %%</string>
+    <string name="s5_simular">Simular</string>
+    <string name="s5_indeterminados">Mostrar indicadores indeterminados</string>
+
+    <string name="s5_msg_t">Toast y Snackbar</string>
+    <string name="s5_msg_d">El toast es un aviso breve que desaparece solo. El snackbar aparece en la parte inferior y puede incluir una acción, como deshacer.</string>
+    <string name="s5_toast">Mostrar toast</string>
+    <string name="s5_snack">Mostrar snackbar</string>
+    <string name="s5_toast_msg">Esto es un toast</string>
+    <string name="s5_snack_msg">Se archivó el mensaje</string>
+    <string name="s5_snack_resp">Pulsaste «Deshacer»: el mensaje se restauró</string>
+
+    <string name="s5_dialogo_t">Diálogo de confirmación</string>
+    <string name="s5_dialogo_d">Interrumpe al usuario para confirmar una acción importante o irreversible antes de ejecutarla.</string>
+    <string name="s5_dialogo_btn">Eliminar archivo</string>
+    <string name="s5_dialogo_titulo">¿Eliminar archivo?</string>
+    <string name="s5_dialogo_msg">El archivo «reporte.pdf» se eliminará de forma permanente.</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="s5_dialogo_si">Confirmaste: archivo eliminado</string>
+    <string name="s5_dialogo_no">Cancelaste la eliminación</string>
+
+    <string name="s5_hoja_t">Hoja inferior (bottom sheet)</string>
+    <string name="s5_hoja_d">Panel que sube desde la parte inferior con opciones o contenido adicional, sin salir de la pantalla actual.</string>
+    <string name="s5_hoja_btn">Abrir hoja inferior</string>
+    <string name="s5_hoja_titulo">¿Qué deseas hacer?</string>
+    <string name="editar">Editar</string>
+    <string name="s5_hoja_resp">Elegiste en la hoja: %1$s</string>
+
+    <string name="s5_tarjeta_t">Tarjeta, separador y badge</string>
+    <string name="s5_tarjeta_d">La tarjeta agrupa información relacionada, el separador divide contenido y el badge muestra un contador sobre un ícono.</string>
+    <string name="s5_tarjeta_titulo">Tarjeta seleccionable</string>
+    <string name="s5_tarjeta_texto">Toca la tarjeta para marcarla o desmarcarla.</string>
+    <string name="s5_tarjeta_marcada">Tarjeta marcada ✔</string>
+    <string name="s5_tarjeta_no">Tarjeta sin marcar</string>
+    <string name="s5_notificar">Nueva notificación</string>
+    <string name="s5_limpiar">Limpiar</string>
+    <string name="s5_badge_resp">Notificaciones pendientes: %1$d</string>
+
+    <!-- ========== SECCIÓN 6 ========== -->
+    <string name="s6_intro">Los contenedores organizan a otros elementos en la pantalla.</string>
+    <string name="s6_filacol_t">Distribución en fila y en columna</string>
+    <string name="s6_filacol_d">LinearLayout acomoda a sus hijos uno tras otro, en horizontal (fila) o en vertical (columna). Cambia la orientación con el selector.</string>
+    <string name="fila">Fila</string>
+    <string name="columna">Columna</string>
+
+    <string name="s6_capas_t">Distribución superpuesta</string>
+    <string name="s6_capas_d">FrameLayout apila elementos uno encima de otro, como un texto sobre una imagen. Toca la imagen para mover la capa superior.</string>
+    <string name="s6_capa">Capa superior</string>
+    <string name="s6_capa_resp">Posición de la capa: %1$s</string>
+    <string name="arriba_izq">arriba a la izquierda</string>
+    <string name="centro">centro</string>
+    <string name="abajo_der">abajo a la derecha</string>
+
+    <string name="s6_scroll_t">Contenedor con desplazamiento</string>
+    <string name="s6_scroll_d">Permite ver contenido más alto que el espacio disponible desplazándolo verticalmente. Desliza dentro del recuadro o usa los botones.</string>
+    <string name="s6_linea">Renglón número %1$d del contenido desplazable</string>
+    <string name="s6_ir_final">Ir al final</string>
+    <string name="s6_ir_inicio">Ir al inicio</string>
+
+    <string name="s6_toolbar_t">Barra superior</string>
+    <string name="s6_toolbar_d">Muestra el título de la pantalla y acciones frecuentes. La app entera usa una barra superior con menú lateral.</string>
+    <string name="s6_toolbar_titulo">Mi bandeja</string>
+    <string name="buscar">Buscar</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="s6_toolbar_resp">Acción de la barra: %1$s</string>
+    <string name="menu">Menú</string>
+
+    <string name="s6_nav_t">Barra de navegación inferior</string>
+    <string name="s6_nav_d">Cambia entre destinos principales de una app con un toque. Además, esta app usa un menú lateral (NavigationView) para ir a las seis secciones.</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="perfil">Perfil</string>
+    <string name="s6_nav_resp">Destino: %1$s</string>
+
+    <string name="s6_pesos_t">Pesos proporcionales y restricciones</string>
+    <string name="s6_pesos_d">Con layout_weight el espacio se reparte en proporción; con ConstraintLayout cada vista se posiciona con restricciones respecto a otras. Mueve los deslizadores.</string>
+    <string name="s6_pesos_resp">Pesos → A: %1$d · B: 2 · C: 1</string>
+    <string name="s6_bias_resp">Sesgo horizontal de la restricción: %1$d %%</string>
+</resources>

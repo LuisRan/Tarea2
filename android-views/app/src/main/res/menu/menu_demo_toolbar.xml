@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/demo_buscar" android:icon="@drawable/ic_search" android:title="@string/buscar" app:showAsAction="always" />
+    <item android:id="@+id/demo_compartir" android:icon="@drawable/ic_share" android:title="@string/s2_compartir" app:showAsAction="always" />
+    <item android:id="@+id/demo_ajustes" android:title="@string/ajustes" app:showAsAction="never" />
+</menu>

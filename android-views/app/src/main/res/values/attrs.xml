@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DemoCard">
+        <attr name="titulo" format="string" />
+        <attr name="descripcion" format="string" />
+        <attr name="componente" format="string" />
+    </declare-styleable>
+</resources>

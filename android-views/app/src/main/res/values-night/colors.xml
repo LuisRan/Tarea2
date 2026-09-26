@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta Material 3 generada a partir del color semilla #006A60 (tema oscuro) -->
+    <color name="md_primary">#82D5C8</color>
+    <color name="md_on_primary">#003731</color>
+    <color name="md_primary_container">#005048</color>
+    <color name="md_on_primary_container">#9EF2E4</color>
+    <color name="md_secondary">#B1CCC6</color>
+    <color name="md_on_secondary">#1C3531</color>
+    <color name="md_secondary_container">#334B47</color>
+    <color name="md_on_secondary_container">#CCE8E2</color>
+    <color name="md_tertiary">#ADCAE6</color>
+    <color name="md_on_tertiary">#153349</color>
+    <color name="md_tertiary_container">#2D4961</color>
+    <color name="md_on_tertiary_container">#CCE5FF</color>
+
+    <color name="rojo_eliminar">#93000A</color>
+</resources>
