@@ -207,17 +207,17 @@ Componente utilizado para cada elemento del catálogo. Las celdas marcadas con *
 
 ## Capturas de pantalla
 
-Las capturas se guardan en `docs/` con los nombres indicados en [`docs/README.md`](docs/README.md).
+Capturas tomadas en un emulador Pixel 8 (API 37) con la app compilada desde este repositorio. Se guardan en `docs/` con los nombres indicados en [`docs/README.md`](docs/README.md).
 
 | Pantalla | Views / XML | Jetpack Compose | Flutter |
 |----------|:-----------:|:---------------:|:-------:|
-| Inicio | <img src="docs/views/inicio.png" width="200"> | <img src="docs/compose/inicio.png" width="200"> | <img src="docs/flutter/inicio.png" width="200"> |
-| 1. Entrada de texto | <img src="docs/views/seccion1.png" width="200"> | <img src="docs/compose/seccion1.png" width="200"> | <img src="docs/flutter/seccion1.png" width="200"> |
-| 2. Botones y acciones | <img src="docs/views/seccion2.png" width="200"> | <img src="docs/compose/seccion2.png" width="200"> | <img src="docs/flutter/seccion2.png" width="200"> |
-| 3. Elementos de selección | <img src="docs/views/seccion3.png" width="200"> | <img src="docs/compose/seccion3.png" width="200"> | <img src="docs/flutter/seccion3.png" width="200"> |
-| 4. Listas y colecciones | <img src="docs/views/seccion4.png" width="200"> | <img src="docs/compose/seccion4.png" width="200"> | <img src="docs/flutter/seccion4.png" width="200"> |
-| 5. Información y retroalimentación | <img src="docs/views/seccion5.png" width="200"> | <img src="docs/compose/seccion5.png" width="200"> | <img src="docs/flutter/seccion5.png" width="200"> |
-| 6. Contenedores y estructura | <img src="docs/views/seccion6.png" width="200"> | <img src="docs/compose/seccion6.png" width="200"> | <img src="docs/flutter/seccion6.png" width="200"> |
+| Inicio | <img src="docs/views/inicio.png" width="200"> | <img src="docs/compose/inicio.png" width="200"> | _Pendiente_ |
+| 1. Entrada de texto | <img src="docs/views/seccion1.png" width="200"> | <img src="docs/compose/seccion1.png" width="200"> | _Pendiente_ |
+| 2. Botones y acciones | <img src="docs/views/seccion2.png" width="200"> | <img src="docs/compose/seccion2.png" width="200"> | _Pendiente_ |
+| 3. Elementos de selección | <img src="docs/views/seccion3.png" width="200"> | <img src="docs/compose/seccion3.png" width="200"> | _Pendiente_ |
+| 4. Listas y colecciones | <img src="docs/views/seccion4.png" width="200"> | <img src="docs/compose/seccion4.png" width="200"> | _Pendiente_ |
+| 5. Información y retroalimentación | <img src="docs/views/seccion5.png" width="200"> | <img src="docs/compose/seccion5.png" width="200"> | _Pendiente_ |
+| 6. Contenedores y estructura | <img src="docs/views/seccion6.png" width="200"> | <img src="docs/compose/seccion6.png" width="200"> | _Pendiente_ |
 
 ## Reflexión final
 
