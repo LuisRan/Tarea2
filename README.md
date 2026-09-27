@@ -98,9 +98,9 @@ Los APK generados se colocan en la carpeta [`apk/`](apk/):
 
 | Versión | Archivo |
 |---------|---------|
-| Views / XML | [`apk/catalogo-views.apk`](apk/catalogo-views.apk) |
-| Jetpack Compose | [`apk/catalogo-compose.apk`](apk/catalogo-compose.apk) |
-| Flutter | [`apk/catalogo-flutter.apk`](apk/catalogo-flutter.apk) |
+| Views / XML | [`apk/catalogo-views.apk`](apk/catalogo-views.apk) (debug, 7 MB) |
+| Jetpack Compose | [`apk/catalogo-compose.apk`](apk/catalogo-compose.apk) (debug, 18 MB) |
+| Flutter | [`apk/catalogo-flutter.apk`](apk/catalogo-flutter.apk) (release, 57 MB) |
 
 ## Tabla de equivalencias
 
