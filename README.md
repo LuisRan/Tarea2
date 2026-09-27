@@ -85,11 +85,8 @@ cd android-compose
 
 Requisitos: Flutter 3.35 o posterior (canal estable) y el SDK de Android.
 
-El repositorio contiene el código Dart (`lib/`), los recursos (`assets/`) y el `AndroidManifest.xml` (con el permiso de Internet). La primera vez se generan los demás archivos de la plataforma Android con `flutter create`, que **no sobrescribe** los archivos existentes:
-
 ```bash
 cd flutter
-flutter create . --project-name catalogo_ui --org mx.ipn.catalogo --platforms android
 flutter pub get
 flutter run                    # ejecuta en el emulador o dispositivo conectado
 flutter build apk --release    # APK: build/app/outputs/flutter-apk/app-release.apk
@@ -211,13 +208,13 @@ Capturas tomadas en un emulador Pixel 8 (API 37) con la app compilada desde este
 
 | Pantalla | Views / XML | Jetpack Compose | Flutter |
 |----------|:-----------:|:---------------:|:-------:|
-| Inicio | <img src="docs/views/inicio.png" width="200"> | <img src="docs/compose/inicio.png" width="200"> | _Pendiente_ |
-| 1. Entrada de texto | <img src="docs/views/seccion1.png" width="200"> | <img src="docs/compose/seccion1.png" width="200"> | _Pendiente_ |
-| 2. Botones y acciones | <img src="docs/views/seccion2.png" width="200"> | <img src="docs/compose/seccion2.png" width="200"> | _Pendiente_ |
-| 3. Elementos de selección | <img src="docs/views/seccion3.png" width="200"> | <img src="docs/compose/seccion3.png" width="200"> | _Pendiente_ |
-| 4. Listas y colecciones | <img src="docs/views/seccion4.png" width="200"> | <img src="docs/compose/seccion4.png" width="200"> | _Pendiente_ |
-| 5. Información y retroalimentación | <img src="docs/views/seccion5.png" width="200"> | <img src="docs/compose/seccion5.png" width="200"> | _Pendiente_ |
-| 6. Contenedores y estructura | <img src="docs/views/seccion6.png" width="200"> | <img src="docs/compose/seccion6.png" width="200"> | _Pendiente_ |
+| Inicio | <img src="docs/views/inicio.png" width="200"> | <img src="docs/compose/inicio.png" width="200"> | <img src="docs/flutter/inicio.png" width="200"> |
+| 1. Entrada de texto | <img src="docs/views/seccion1.png" width="200"> | <img src="docs/compose/seccion1.png" width="200"> | <img src="docs/flutter/seccion1.png" width="200"> |
+| 2. Botones y acciones | <img src="docs/views/seccion2.png" width="200"> | <img src="docs/compose/seccion2.png" width="200"> | <img src="docs/flutter/seccion2.png" width="200"> |
+| 3. Elementos de selección | <img src="docs/views/seccion3.png" width="200"> | <img src="docs/compose/seccion3.png" width="200"> | <img src="docs/flutter/seccion3.png" width="200"> |
+| 4. Listas y colecciones | <img src="docs/views/seccion4.png" width="200"> | <img src="docs/compose/seccion4.png" width="200"> | <img src="docs/flutter/seccion4.png" width="200"> |
+| 5. Información y retroalimentación | <img src="docs/views/seccion5.png" width="200"> | <img src="docs/compose/seccion5.png" width="200"> | <img src="docs/flutter/seccion5.png" width="200"> |
+| 6. Contenedores y estructura | <img src="docs/views/seccion6.png" width="200"> | <img src="docs/compose/seccion6.png" width="200"> | <img src="docs/flutter/seccion6.png" width="200"> |
 
 ## Reflexión final
 
