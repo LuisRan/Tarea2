@@ -59,7 +59,7 @@ README.md          Este documento
 
 ### Android Views (XML)
 
-Requisitos: Android Studio (Koala o posterior) con JDK 17+ y el SDK de Android 34.
+Requisitos: Android Studio (Koala o posterior) y el SDK de Android 34. Gradle 8.9 necesita un JDK entre 17 y 21; desde la Terminal, si `java -version` muestra una versión más nueva, usa el JDK de Android Studio, por ejemplo `export JAVA_HOME=~/Library/Java/JavaVirtualMachines/jbr-21.0.11/Contents/Home`.
 
 ```bash
 cd android-views
